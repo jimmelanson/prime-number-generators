@@ -1,0 +1,23 @@
+
+sub is_prime {
+    if($_[1] == 2) {
+        return 1;
+    }
+    elsif($_[1] > 2) {
+        if($_[1] % 2 == 0) {
+            return 0;
+        } else {
+            for(my $c = 2; $c < $_[1]; $c++) {
+                if($_[1] % $c == 0) {
+                    return 0;
+                }
+            }
+            return 1;
+        }
+    } else {
+        return 0;
+    }
+}
+
+1;
+
