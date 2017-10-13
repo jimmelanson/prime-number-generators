@@ -15,7 +15,7 @@ End If
 
 
 
-#This would test a single number
+#This would test a single number, number must be greater than 2
 dim longNumberToTest as longEnd
 longNumberToTest = 97
 dim boolNotPrime as boolean
